@@ -112,7 +112,7 @@ Nuxt.js(SSR, Composition-api), TypeScript, Vuetify, Firebase, Authentication, Fi
 ### こだわりポイント
 #### 開発のみに集中できる開発環境の構築
 WSL2でWindowsにLinux環境を作成し、DockerでNode.jsのコンテナ環境を作成しました。さらにVSCodeのRemote Containerを使用することでデスクトップにあるショートカットワンクリックで仮想コンテナが立ち上がりコードが書けるようになります。
-またGithub actionsでCICDパイプラインを作成し、mainブランチにpushするだけで自動デプロイされ、本番環境に反映されるようになっています。
+またGithub actionsで継続的デリバリーを実現し、mainブランチにpushするだけで自動デプロイされ、本番環境に反映されるようになっています。
 これによりNuxt.js * Firebaseの開発に集中できるようにしました。
 
 #### ページスピード改善
@@ -121,27 +121,3 @@ SEOも意識したサービスを作りたかったのでページスピード�
 ![2022-08-16 (2).png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2568126/ba5159af-e486-7ffc-75a9-e8dba50b91e4.png)
 
 <div style="page-break-before:always"></div>
-
-## 【個人学習】Golang（2022年8月～）
-
-### 背景
-フロントエンド開発・バックエンド開発両方で使用できるという事でJavaScriptを使用した開発を経験してきました。一通りアプリケーションを開発できるようになったと感じているので新しい言語を学びたいと思い、Golangを選択しました。
-
-### 学習過程
-1. <a src="https://www.amazon.co.jp/%E5%9F%BA%E7%A4%8E%E3%81%8B%E3%82%89%E3%82%8F%E3%81%8B%E3%82%8B-Go%E8%A8%80%E8%AA%9E-%E5%8F%A4%E5%B7%9D-%E6%98%87/dp/4863541171" target="_blank">基礎からわかる Go言語</a>を使用し、基礎を固めました。A Tour of Go も試しましたが、とっつきずらい部分もあったのでコチラの書籍を購入して勉強しました。
-
-2. Golang * Cloud Functions * LINE Messaging API を使用した天気予報を取得するLINE BOTを作成しました。基礎を学んだ後、簡単でも良いのでアプリを作成して公開したいと思い作成しました。
-
-    QRコード：<a src="https://qr-official.line.me/sid/L/662bwhhi.png" target="_blank">https://qr-official.line.me/sid/L/662bwhhi.png</a>
-
-    リポジトリ：<a src="https://github.com/ucho456/go_weather" target="_blank">https://github.com/ucho456/go_weather</a>
-
-3. CLIでTODOアプリを作成し、公開しました。クロスコンパイル可能で各プラットフォーム向けにバイナリを作成できるという機能を体験する為に作成しました。
-
-    ダウンロードページ：<a src="https://github.com/ucho456/go_todo_cli/releases/tag/v1.0.0" target="_blank">https://github.com/ucho456/go_todo_cli/releases/tag/v1.0.0</a>
-
-    リポジトリ：<a src="https://github.com/ucho456/go_todo_cli" target="_blank">https://github.com/ucho456/go_todo_cli</a>
-
-4. <a src="https://www.amazon.co.jp/%E5%9F%BA%E7%A4%8E%E3%81%8B%E3%82%89%E3%82%8F%E3%81%8B%E3%82%8B-Go%E8%A8%80%E8%AA%9E-%E5%8F%A4%E5%B7%9D-%E6%98%87/dp/4863541171" target="_blank">詳解Go言語Webアプリケーション開発</a>を使用し、GolangでWebサーバーの構築を学習しました。
-
-    リポジトリ：<a src="https://github.com/ucho456/go_todo_cli" target="_blank">https://github.com/ucho456/go_todo_app</a>
